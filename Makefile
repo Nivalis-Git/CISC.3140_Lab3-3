@@ -1,2 +1,2 @@
 Execute:
-	xdg-open src/body.html
+	xdg-open src/lab3-3_maskApp.html
