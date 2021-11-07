@@ -2,6 +2,7 @@
 	<head>
 		<style>
 			h1,h2 {line-height:0.60; margin-top:20px; margin-bottom:20px;}
+			#validate_pass {margin-top: 8px;}
 			
 			div#page {width:80%; margin:auto;}
 			
@@ -13,7 +14,6 @@
 	
 	
 	<body>
-		
 		<div id="page">
 			<div id="text">
 				<h1>CISC. 3140</h1>
@@ -21,9 +21,20 @@
 				
 				<p>A project for class. Here you can check if a password matches the text pattern that I chose.<br><br>Enter a string of text in the field below and it will be checked against the following regular expression:<br>[ ... ]</p>
 				
-				<label for="password">Enter password:</label> <br>
-					<input> <br>
-					<input type="button" value="Validate" style="margin-top: 8px;">
+				<form>
+					<label for="password">Enter password:</label> <br>
+						<input type="text" id=password> <br>
+						<input type="submit" id="validate_pass" value="Validate">
+				</form>
+				
+				<script>
+					validate_pass.onclick = function()
+					{
+						var pass = document.getElementById("password").value;
+						var mask_pass = /.{3,5}-.{3,5}-.{3,5}/;
+						alert(mask_pass.test(pass));
+					}
+				</script>
 			</div>
 		</div>
 	</body>
