@@ -7,6 +7,9 @@
 			div#page {width:80%; margin:auto;}
 			
 			div#text {width:760px;}
+			
+			.text_valid {color:green; visibility:collapse;}
+			.text_invalid {color:red; visibility:collapse;}
 		</style>
 		
 		<title>CISC. 3140 - Lab 3-3</title>
@@ -16,6 +19,7 @@
 	<body>
 		<div id="page">
 			<div id="text">
+				
 				<h1>CISC. 3140</h1>
 				<h2>Lab 3, Task 3</h2>
 				
@@ -35,6 +39,15 @@
 						alert(mask_pass.test(pass));
 					}
 				</script>
+				
+				<div class="text_invalid">
+					<p>Invalid password: the text you entered does not match the pattern. Try again.</p>
+				</div>
+				
+				<div class="text_valid">
+					<p>Valid Password</p>
+				</div>
+				
 			</div>
 		</div>
 	</body>
