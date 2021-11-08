@@ -1,0 +1,44 @@
+/* 
+ *  Elements
+ */
+h1, h2
+{
+	line-height:0.60;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+input[type=submit]
+{
+	margin-top: 8px;
+}
+
+
+/* 
+ *  Classes
+ */
+.text_valid
+{
+	color:green;
+}
+.text_invalid
+{
+	color:red;
+}
+.hidden
+{
+	display:none;
+}
+
+
+/* 
+ *  ID
+ */
+div#page
+{
+	width:80%;
+	margin:auto;
+}
+div#text
+{
+	width:760px;
+}

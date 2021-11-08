@@ -1,17 +1,6 @@
 <html>
 	<head>
-		<style>
-			h1, h2 {line-height:0.60; margin-top:20px; margin-bottom:20px;}
-			input[type=submit] {margin-top: 8px;}
-			
-			.text_valid {color:green;}
-			.text_invalid {color:red;}
-			.hidden {display:none;}
-			
-			div#page {width:80%; margin:auto;}
-			div#text {width:760px;}			
-		</style>
-		
+		<link rel="stylesheet" href="style.css">
 		<title>CISC. 3140 - Lab 3-3</title>
 	</head>
 	
@@ -25,12 +14,10 @@
 				
 				<p>A project for class. Here you can check if a password matches the text pattern that I chose.<br><br>Enter a string of text in the field below and it will be checked against the following regular expression:<br>[ ... ]</p>
 				
-				</*form>
 					<label for="password">Enter password:</label> <br>
 						<input type="text" id=password> <br>
 						<input type="submit" id="button_validatePass" value="Validate">
-				</*/form>
-				
+						
 				<script>
 					button_validatePass.onclick = function()
 					{
