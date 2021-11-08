@@ -1,4 +1,5 @@
-# Practice: masking text
+# Practice: Masking Text
+This is a simple web application which will validate a password with an arbitrary input mask.
 
 
 ## Instructions (Linux)
