@@ -14,45 +14,11 @@
 				
 				<p>A project for class. Here you can check if a password matches the text pattern that I chose.<br><br>Enter a string of text in the field below and it will be checked against the following regular expression:<br>[ ... ]</p>
 				
-					<label for="password">Enter password:</label> <br>
-						<input type="text" id=password> <br>
-						<input type="submit" id="button_validatePass" value="Validate">
+				<script type="text/javascript" scr="js/validate_password.js"></script>
+				<label for="password">Enter password:</label> <br>
+					<input type="text" id=password> <br>
+					<input type="submit" id="button_validatePass" value="Validate">
 						
-				<script>
-					button_validatePass.onclick = function()
-					{
-						var psw = document.getElementById("password").value;
-						var mask_psw = /.{3,5}-.{3,5}-.{3,5}/;
-						let valid = mask_psw.test(psw);
-						
-						var div_valid = document.getElementById("password_valid");
-						var div_invalid = document.getElementById("password_invalid");
-						
-						switch (valid)
-						{
-							case true:
-								if (div_valid.classList.contains("hidden"))
-								{
-									if (!div_invalid.classList.contains("hidden"))
-										div_invalid.classList.toggle("hidden");
-									div_valid.classList.toggle("hidden");
-								}
-								break;
-							
-							case false:
-								if (div_invalid.classList.contains("hidden"))
-								{
-									if (!div_valid.classList.contains("hidden"))
-										div_valid.classList.toggle("hidden");
-									div_invalid.classList.toggle("hidden");
-								}
-								break;
-							
-							default:
-								break;
-						}
-					}
-				</script>
 				
 				<div class="text_invalid hidden" id="password_invalid">
 					<p>Invalid password: the text you entered does not match the pattern. Try again.</p>
