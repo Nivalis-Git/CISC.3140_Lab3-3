@@ -1,13 +1,15 @@
 /* 
  *  Elements
+ *
  */
-h1, h2
+h1, h2 /* Adjusts to my liking */
 {
 	line-height:0.60;
 	margin-top:20px;
 	margin-bottom:20px;
 }
-input[type=submit]
+
+input[type=submit] /* Adjusts to my liking */
 {
 	margin-top: 8px;
 }
@@ -15,16 +17,19 @@ input[type=submit]
 
 /* 
  *  Classes
+ *
  */
-.text_valid
+.text_valid /* Text in response to correct input */
 {
 	color:green;
 }
-.text_invalid
+
+.text_invalid /* Text in response to uncorrect input */
 {
 	color:red;
 }
-.hidden
+
+.hidden /* Kept as a class for the ability to toggle it */
 {
 	display:none;
 }
@@ -32,13 +37,16 @@ input[type=submit]
 
 /* 
  *  ID
+ *
  */
-div#page
+div#page /* Webpage */
 {
+	/* Centers the webpage */
 	width:80%;
 	margin:auto;
 }
-div#text
+
+div#text /* Text within the webpage */
 {
-	width:760px;
+	width:760px; /* Adjusts line-length of the text in the page */
 }

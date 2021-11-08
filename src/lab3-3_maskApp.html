@@ -12,13 +12,16 @@
 				<h1>CISC. 3140</h1>
 				<h2>Lab 3, Task 3</h2>
 				
-				<p>A project for class. Here you can check if a password matches the text pattern that I chose.<br><br>Enter a string of text in the field below and it will be checked against the following regular expression:<br>[ ... ]</p>
+				<!-- Explanatory Text -->
+				<p>A project for class. Here you can check if a password matches the text pattern that I chose.<br><br>Enter a string of text in the field below and it will be checked for a match with the following pattern:<br>[ 3 to 5 characters and then a hyphen "-", followed by another 3 to 5 characters and a hyphen "-", ending with 3 to 5 characters ]</p>
 				
+				<!-- Password Field -->
 				<label for="password">Enter password:</label> <br>
 					<input type="text" id=password> <br>
 					<input type="submit" id="button_validatePass" value="Validate">
 				<script type="text/javascript" src="js/validate_password.js"></script>
 				
+				<!-- Conditional text to indicate validity of password -->
 				<div class="text_invalid hidden" id="password_invalid">
 					<p>Invalid password: the text you entered does not match the pattern. Try again.</p>
 				</div>
