@@ -1,6 +1,6 @@
 /* 
  * Event handler for the password-submission button.
- * Determines validity of the password and toggles appropriate response-text
+ * Determines validity of the password and toggles appropriate response-text.
  */
 button_validatePass.onclick = function()
 {
